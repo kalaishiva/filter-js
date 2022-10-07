@@ -11,15 +11,16 @@
 
 <body>
     <!-- Header -->
-    <header class="text-gray-600 body-font">
+    <header class="text-gray-600 body-font bg-blue-200 py-[100px]">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+
 
             <h1 class="text-6xl	ml-3  font-bold text-left text-blue-700">Filter App </h1>
 
             <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
                 <div class=" mr-10 relative inline-block text-left">
                     <div>
-                        <button type="button" class="inline-flex w-full justify-center rounded-md border border-blue-800  bg-blue-200 px-7 py-2 text-lg font-bold text-blue-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100"
+                        <button type="button" class="colorBtn inline-flex w-full justify-center rounded-md border border-blue-800  bg-blue-200 px-7 py-2 text-lg font-bold text-blue-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100"
                             id="menu-button" aria-expanded="true" aria-haspopup="true">
                         Color
                         <!-- Heroicon name: mini/chevron-down -->
@@ -28,21 +29,25 @@
                         </svg>
                       </button>
                     </div>
-                    <div class="absolute hidden right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    <div id="color-hide" class="absolute hidden  right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                         <div class="py-1" role="none">
                             <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Account settings</a>
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Support</a>
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">License</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-medium hover:bg-blue-200 " role="menuitem" tabindex="-1" id="menu-item-0">Black</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-medium hover:bg-blue-200 " role="menuitem" tabindex="-1" id="menu-item-2">Green</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-medium hover:bg-blue-200 " role="menuitem" tabindex="-1" id="menu-item-1">Blue</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-medium hover:bg-blue-200 " role="menuitem" tabindex="-1" id="menu-item-2">Orange</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-medium hover:bg-blue-200 " role="menuitem" tabindex="-1" id="menu-item-2">Pink</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-medium hover:bg-blue-200 " role="menuitem" tabindex="-1" id="menu-item-2">Purple</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-medium hover:bg-blue-200 " role="menuitem" tabindex="-1" id="menu-item-2">Red</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-medium hover:bg-blue-200 " role="menuitem" tabindex="-1" id="menu-item-2">White</a>
                             <form method="POST" action="#" role="none">
-                                <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Sign out</button>
                             </form>
                         </div>
                     </div>
                 </div>
                 <div class="mr-10 relative inline-block text-left">
                     <div>
-                        <button type="button" class="inline-flex w-full justify-center rounded-md border border-blue-800  bg-blue-200 px-7 py-2 text-lg font-bold text-blue-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100"
+                        <button type="button" class="sizeBtn  inline-flex w-full justify-center rounded-md border border-blue-800  bg-blue-200 px-7 py-2 text-lg font-bold text-blue-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100"
                             id="menu-button" aria-expanded="true" aria-haspopup="true">
                         Size
                         <!-- Heroicon name: mini/chevron-down -->
@@ -52,21 +57,21 @@
                       </button>
                     </div>
 
-                    <div class="absolute hidden right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    <div id="size-hide" class="absolute hidden right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                         <div class="py-1" role="none">
                             <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Account settings</a>
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Support</a>
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">License</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-medium hover:bg-blue-200" role="menuitem" tabindex="-1" id="menu-item-0">Small</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-medium hover:bg-blue-200" role="menuitem" tabindex="-1" id="menu-item-1">Medium</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-medium hover:bg-blue-200" role="menuitem" tabindex="-1" id="menu-item-2">Large</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-medium hover:bg-blue-200" role="menuitem" tabindex="-1" id="menu-item-2">XL</a>
                             <form method="POST" action="#" role="none">
-                                <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Sign out</button>
                             </form>
                         </div>
                     </div>
                 </div>
                 <div class="relative inline-block text-left mr-10">
                     <div>
-                        <button type="button" class="inline-flex w-full justify-center rounded-md border border-blue-800  bg-blue-200 px-7 py-2 text-lg font-bold text-blue-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100"
+                        <button type="button" class="priceBtn  inline-flex w-full justify-center rounded-md border border-blue-800  bg-blue-200 px-7 py-2 text-lg font-bold text-blue-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100"
                             id="menu-button" aria-expanded="true" aria-haspopup="true">
                         Price
                         <!-- Heroicon name: mini/chevron-down -->
@@ -78,14 +83,14 @@
 
 
 
-                    <div class="absolute hidden right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    <div id="price-hide" class="absolute hidden right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                         <div class="py-1" role="none">
                             <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Account settings</a>
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Support</a>
-                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">License</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-medium hover:bg-blue-200" role="menuitem" tabindex="-1" id="menu-item-0">$ 12</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-medium hover:bg-blue-200" role="menuitem" tabindex="-1" id="menu-item-1">$ 16 </a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-medium hover:bg-blue-200" role="menuitem" tabindex="-1" id="menu-item-2">$ 18</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-medium hover:bg-blue-200" role="menuitem" tabindex="-1" id="menu-item-2">$ 21</a>
                             <form method="POST" action="#" role="none">
-                                <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Sign out</button>
                             </form>
                         </div>
                     </div>
@@ -97,397 +102,398 @@
                 <a class="mr-5 hover:text-gray-900">Third Link</a>
                 <a class="mr-5 hover:text-gray-900">Fourth Link</a> -->
             </nav>
-            <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
+            <button class="inline-flex  justify-center rounded-md border border-blue-800  bg-purple-400 px-7 py-2 mr-4 text-lg font-bold text-white shadow-sm hover:bg-blue-200 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 ">Search 
+      </button>
+            <button class="inline-flex  justify-center rounded-md border border-blue-800  bg-purple-400 px-7 py-2 text-lg font-bold text-white shadow-sm hover:bg-blue-200 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 ">Clear
       </button>
         </div>
     </header>
-
+    <div id="show"></div>
 
     <!-- Product Container -->
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-wrap -m-4">
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+
+                <div class=" blue small price-16 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/blue1.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : small</h3>
+                        <h3 class="text-gray-500 size-small text-medium tracking-widest title-font mb-1">size : small</h3>
                         <h2 class="text-gray-900 title-font text-lg font-medium">Blue</h2>
                         <p class="mt-1">$16.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+
+                <div class="blue medium price-21 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/blue2.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : medium</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Blue</h2>
+                        <h3 class="text-gray-500 size-medium text-medium tracking-widest title-font mb-1">size : medium</h3>
+                        <h2 class="blue text-gray-900 title-font text-lg font-medium">Blue</h2>
                         <p class="mt-1">$21.15</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="blue large price-12 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/blue3.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : large</h3>
+                        <h3 class="text-gray-500 size-large text-medium tracking-widest title-font mb-1">size : large</h3>
                         <h2 class="text-gray-900 title-font text-lg font-medium">Blue</h2>
                         <p class="mt-1">$12.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="blue xl price-18 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/blue4.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : XL</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Blue</h2>
+                        <h3 class="text-gray-500 size-XL text-medium tracking-widest title-font mb-1">size : XL</h3>
+                        <h2 class="blue text-gray-900 title-font text-lg font-medium">Blue</h2>
                         <p class="mt-1">$18.40</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="green small price-16 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/green1.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : small</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Green</h2>
+                        <h3 class="text-gray-500 size-small text-medium tracking-widest title-font mb-1">size : small</h3>
+                        <h2 class="green text-gray-900 title-font text-lg font-medium">Green</h2>
                         <p class="mt-1">$16.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="green medium price-21 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/green2.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : medium</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Green</h2>
+                        <h3 class="text-gray-500 size-medium text-medium tracking-widest title-font mb-1">size : medium</h3>
+                        <h2 class="green text-gray-900 title-font text-lg font-medium">Green</h2>
                         <p class="mt-1">$21.15</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="green large price-12 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/green3.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : large</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Green</h2>
+                        <h3 class="text-gray-500 size-large text-medium tracking-widest title-font mb-1">size : large</h3>
+                        <h2 class="green text-gray-900 title-font text-lg font-medium">Green</h2>
                         <p class="mt-1">$12.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="green xl price-18 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/green4.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : XL</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Green</h2>
+                        <h3 class="text-gray-500 size-XL text-medium tracking-widest title-font mb-1">size : XL</h3>
+                        <h2 class="green text-gray-900 title-font text-lg font-medium">Green</h2>
                         <p class="mt-1">$18.40</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="green small price-16 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/green5.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : small</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Green</h2>
+                        <h3 class="text-gray-500 size-small text-medium tracking-widest title-font mb-1">size : small</h3>
+                        <h2 class="green text-gray-900 title-font text-lg font-medium">Green</h2>
                         <p class="mt-1">$16.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="green medium price-21 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/green6.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : medium</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Green</h2>
+                        <h3 class="text-gray-500 size-medium text-medium tracking-widest title-font mb-1">size : medium</h3>
+                        <h2 class="green text-gray-900 title-font text-lg font-medium">Green</h2>
                         <p class="mt-1">$21.15</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="orange large price-12 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/orange1.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : large</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">orange</h2>
+                        <h3 class="text-gray-500 size-large text-medium tracking-widest title-font mb-1">size : large</h3>
+                        <h2 class="orange text-gray-900 title-font text-lg font-medium">orange</h2>
                         <p class="mt-1">$12.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="black xl price-18 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/black1.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : XL</h3>
+                        <h3 class="text-gray-500 size-XL text-medium tracking-widest title-font mb-1">size : XL</h3>
                         <h2 class="text-gray-900 title-font text-lg font-medium">Black</h2>
                         <p class="mt-1">$18.40</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="black small price-16 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/black2.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : small</h3>
+                        <h3 class="text-gray-500 size-small text-medium tracking-widest title-font mb-1">size : small</h3>
                         <h2 class="text-gray-900 title-font text-lg font-medium">Black</h2>
                         <p class="mt-1">$16.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="black medium price-21 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/black3.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : medium</h3>
+                        <h3 class="text-gray-500 size-medium text-medium tracking-widest title-font mb-1">size : medium</h3>
                         <h2 class="text-gray-900 title-font text-lg font-medium">Black</h2>
                         <p class="mt-1">$21.15</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="black large price-12 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/black4.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : large</h3>
+                        <h3 class="text-gray-500 size-large text-medium tracking-widest title-font mb-1">size : large</h3>
                         <h2 class="text-gray-900 title-font text-lg font-medium">Black</h2>
                         <p class="mt-1">$12.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="black xl price-18 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/black5.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : XL</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Black</h2>
+                        <h3 class="text-gray-500 size-XL text-medium tracking-widest title-font mb-1">size : XL</h3>
+                        <h2 class="black text-gray-900 title-font text-lg font-medium">Black</h2>
                         <p class="mt-1">$18.40</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="pink small price-16 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/pink1.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : small</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Pink</h2>
+                        <h3 class="text-gray-500 size-small text-medium tracking-widest title-font mb-1">size : small</h3>
+                        <h2 class="pink text-gray-900 title-font text-lg font-medium">Pink</h2>
                         <p class="mt-1">$16.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="pink medium price-21 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/pink2.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : medium</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Pink</h2>
+                        <h3 class="text-gray-500 size-medium text-medium tracking-widest title-font mb-1">size : medium</h3>
+                        <h2 class="pink text-gray-900 title-font text-lg font-medium">Pink</h2>
                         <p class="mt-1">$21.15</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="pink large price-12 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/pink3.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : large</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Pink</h2>
+                        <h3 class="text-gray-500 size-large text-medium tracking-widest title-font mb-1">size : large</h3>
+                        <h2 class="pink text-gray-900 title-font text-lg font-medium">Pink</h2>
                         <p class="mt-1">$12.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="pink xl price-18 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/pink4.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : XL</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Pink</h2>
+                        <h3 class="text-gray-500 size-XL text-medium tracking-widest title-font mb-1">size : XL</h3>
+                        <h2 class="pink text-gray-900 title-font text-lg font-medium">Pink</h2>
                         <p class="mt-1">$18.40</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="pink small price-16 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/pink5.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : small</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Pink</h2>
+                        <h3 class="text-gray-500 size-small text-medium tracking-widest title-font mb-1">size : small</h3>
+                        <h2 class="pink text-gray-900 title-font text-lg font-medium">Pink</h2>
                         <p class="mt-1">$16.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="pink medium price-21 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/pink6.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : medium</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Pink</h2>
+                        <h3 class="text-gray-500 size-medium text-medium tracking-widest title-font mb-1">size : medium</h3>
+                        <h2 class="pink text-gray-900 title-font text-lg font-medium">Pink</h2>
                         <p class="mt-1">$21.15</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="purple large price-12 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/purple1.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : large</h3>
+                        <h3 class="text-gray-500 size-large text-medium tracking-widest title-font mb-1">size : large</h3>
                         <h2 class="text-gray-900 title-font text-lg font-medium">Purple</h2>
                         <p class="mt-1">$12.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="purple xl price-18 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/purple2.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : XL</h3>
+                        <h3 class="text-gray-500 size-XL text-medium tracking-widest title-font mb-1">size : XL</h3>
                         <h2 class="text-gray-900 title-font text-lg font-medium">Purple</h2>
                         <p class="mt-1">$18.40</p>
                     </div>
                 </div>
 
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="purple large price-12 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/purple3.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : large</h3>
+                        <h3 class="text-gray-500 size-large text-medium tracking-widest title-font mb-1">size : large</h3>
                         <h2 class="text-gray-900 title-font text-lg font-medium">Purple</h2>
                         <p class="mt-1">$12.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="purple xl price-18 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/purple4.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : XL</h3>
+                        <h3 class="text-gray-500 size-XL text-medium tracking-widest title-font mb-1">size : XL</h3>
                         <h2 class="text-gray-900 title-font text-lg font-medium">Purple</h2>
                         <p class="mt-1">$18.40</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="purple small price-16 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/purple5.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : small</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Purple</h2>
+                        <h3 class="text-gray-500 size-small text-medium tracking-widest title-font mb-1">size : small</h3>
+                        <h2 class="purple text-gray-900 title-font text-lg font-medium">Purple</h2>
                         <p class="mt-1">$16.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="red medium price-21 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/red1.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : medium</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Red</h2>
+                        <h3 class="text-gray-500 size-medium text-medium tracking-widest title-font mb-1">size : medium</h3>
+                        <h2 class="red text-gray-900 title-font text-lg font-medium">Red</h2>
                         <p class="mt-1">$21.15</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="red large price-12 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/red2.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : large</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">oRed</h2>
+                        <h3 class="text-gray-500 size-large text-medium tracking-widest title-font mb-1">size : large</h3>
+                        <h2 class="red text-gray-900 title-font text-lg font-medium">Red</h2>
                         <p class="mt-1">$12.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="red xl price-18 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/red3.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : XL</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Red</h2>
+                        <h3 class="text-gray-500 size-XL text-medium tracking-widest title-font mb-1">size : XL</h3>
+                        <h2 class="red text-gray-900 title-font text-lg font-medium">Red</h2>
                         <p class="mt-1">$18.40</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="red small price-16 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/red4.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : small</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Red</h2>
+                        <h3 class="text-gray-500 size-small text-medium tracking-widest title-font mb-1">size : small</h3>
+                        <h2 class="red text-gray-900 title-font text-lg font-medium">Red</h2>
                         <p class="mt-1">$16.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="red medium price-21 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/red5.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : medium</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Red</h2>
+                        <h3 class="text-gray-500 size-medium text-medium tracking-widest title-font mb-1">size : medium</h3>
+                        <h2 class="red text-gray-900 title-font text-lg font-medium">Red</h2>
                         <p class="mt-1">$21.15</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="red large price-12 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/red6.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : large</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Red</h2>
+                        <h3 class="text-gray-500 size-large text-medium tracking-widest title-font mb-1">size : large</h3>
+                        <h2 class="red text-gray-900 title-font text-lg font-medium">Red</h2>
                         <p class="mt-1">$12.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="red xl price-18 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/red7.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : XL</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Red</h2>
+                        <h3 class="text-gray-500 size-XL text-medium tracking-widest title-font mb-1">size : XL</h3>
+                        <h2 class="red text-gray-900 title-font text-lg font-medium">Red</h2>
                         <p class="mt-1">$18.40</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="white small price-16 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/white1.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : small</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">White</h2>
+                        <h3 class="text-gray-500 size-small text-medium tracking-widest title-font mb-1">size : small</h3>
+                        <h2 class="white text-gray-900 title-font text-lg font-medium">White</h2>
                         <p class="mt-1">$16.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="white medium price-21 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/white2.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : medium</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">White</h2>
+                        <h3 class="text-gray-500 size-medium text-medium tracking-widest title-font mb-1">size : medium</h3>
+                        <h2 class="white text-gray-900 title-font text-lg font-medium">White</h2>
                         <p class="mt-1">$21.15</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="white large price-12 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/white3.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : large</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">White</h2>
+                        <h3 class="text-gray-500 size-large text-medium tracking-widest title-font mb-1">size : large</h3>
+                        <h2 class="white text-gray-900 title-font text-lg font-medium">White</h2>
                         <p class="mt-1">$12.00</p>
                     </div>
                 </div>
-                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <div class="white xl price-18 lg:w-1/4 md:w-1/2 p-4 w-full">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="./images/white4.jpg">
                     </a>
                     <div class="mt-4">
-                        <h3 class="text-gray-500 text-medium tracking-widest title-font mb-1">size : XL</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium">White</h2>
+                        <h3 class="text-gray-500 size-XL text-medium tracking-widest title-font mb-1">size : XL</h3>
+                        <h2 class="white text-gray-900 title-font text-lg font-medium">White</h2>
                         <p class="mt-1">$18.40</p>
                     </div>
                 </div>
